@@ -98,8 +98,8 @@ View:
 ---
 ---
 # GitHub kulanımı
-- ```git pull origin master``` yaptıktan sonra ilk iş branch oluşturmak => ```git checkout -b 'branch ismi'```
+- ```git pull origin development``` yaptıktan sonra ilk iş branch oluşturmak => ```git checkout -b 'branch ismi'```
 - Üzerinde çalıştığınız özellik tamamlandıktan sonra ```git push origin 'branch ismi'``` yapıp GihGub'a yollayın. 
 - Conflict varsa çözülmesi için oradan ele alınacaktır.
 ---
-- Pull yapmak için ```git checkout master``` yapıp master branch'inden ```git pull origin master``` yapıp ilk aşamaya geri dönün.
+- Pull yapmak için ```git checkout development``` yapıp master branch'inden ```git pull origin development``` yapıp ilk aşamaya geri dönün.
