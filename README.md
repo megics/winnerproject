@@ -1,3 +1,12 @@
+# ÜÇÜNCÜ TAKIM
+- Kaan K. Kölköy
+- Ayşegül Koca
+- Yankı Ekin Yüksel
+- Meliha Gizem Çelik
+---
+---
+---
+
 # GEMS
 ## [Devise](https://github.com/plataformatec/devise)
 - ```gem 'devise'```
@@ -93,6 +102,20 @@ View:
 
   <%= f.submit %>
 <% end %>
+```
+---
+## [Paranoia](https://github.com/rubysherpas/paranoia)
+#### Yumuşşak silmek
+- ```gem "paranoia", github: "rubysherpas/paranoia", branch: "rails5"```
+- bundle install
+- ```bin/rails generate migration AddDeletedAtToModelIsmi deleted_at:datetime:index```
+- Kullanımı (model içerisinde)
+```ruby
+class Client < ActiveRecord::Base
+  acts_as_paranoid
+
+  # ...
+end
 ```
 ---
 ---
