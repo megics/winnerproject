@@ -118,6 +118,27 @@ class Client < ActiveRecord::Base
 end
 ```
 ---
+## [FriendlyID](https://github.com/norman/friendly_id)
+#### Otomatik Slug Halledici
+-  ```gem 'friendly_id', '~> 5.1.0'```
+- Sonra:
+```bash
+rails generate friendly_id
+rails generate model Modelİsmi name:string slug:string:uniq
+rake db:migrate
+```
+- ```ModelIsmi.rb``` içerisinde
+```ruby
+class ModelIsmi < ApplicationRecord
+  extend FriendlyId
+  friendly_id :sutun_ismi, use: :slugged
+end
+```
+- Daha sonra controllerda modeli çağırırken ```Model.find``` yerine:
+```ruby
+User.friendly.find(params[:id])
+```
+---
 ---
 ---
 # GitHub kulanımı
